@@ -95,7 +95,7 @@ def squared_picture(img, img_path=''):
         return img
 
 
-def scan_non_square_picture(root_path, resize_path, original_path, img_size):    
+def scan_non_square_picture(root_path, resize_path, original_path):    
     class_plants = os.listdir(root_path)
     for cd in class_plants:
         class_list_plants = os.listdir(root_path + cd)
@@ -120,6 +120,5 @@ if __name__== "__main__":
 
     scan_non_square_picture(path_train,
                             path_resize,
-                            path_non_square,
-                            800)
+                            path_non_square)
   
